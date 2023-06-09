@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link href="/dist/output.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="w-full flex justify-center bg-dark-cyan">
+        <div>
+            <p class="w-fit p-2 text-white">The Hatchet</p>
+            <p class="w-fit p-2 text-white" onclick="startPlaying()">JUKEBOX</p>
+        </div>
+    </div>
+    <div class="w-full flex">
+        <div id="QR" class="w-1/4">
+            <p>wekjbfv;ksjbvd</p>
+        </div>
+        <div id="middle" class="justify-center">
+            <div id="currentSong" class="max-w-xl p-2 flex bg-dark-cyan m-4">
+                <img class="w-1/2" src="/assets/img/Alex Productions.png" alt="">
+                <div class="w-1/2 flex flex-col items-center justify-center">
+                    <p class="text-white p-2">Naam nummer</p>
+                    <p class="text-white p-2">artiest naam</p>
+                </div>
+                <p class="text-white p-2 h-fit" id="duur">3:36</p>
+            </div>
+            <div class="justify-center flex">
+                <div class="bg-dark-cyan p-2 flex">
+                    <table id="songTable" class="text-white border-spacing-2 border-separate">
+                        <tr class="border-b border-white" onclick="addVote(this)">
+                            <td class="px-4">1.</td>
+                            <td><img class="w-12 pb-4" src="/assets/img/Alex Productions.png" alt=""></td>
+                            <td class="p-2 text-lg">Higher and Higher</td>
+                            <td class="text-gray-400 text-xs p-2">Alex Productions</td>
+                            <td class="pl-6 pr-4">3:36</td>
+                            <td id="mobile" class="sm:hidden block">5</td>
+                        </tr>
+                        <tr onclick="addVote(this)" class="border-b border-white">
+                            <td class="px-4">2.</td>
+                            <td><img class="w-12 pb-4" src="/assets/img/Least Carpet.jpeg" alt=""></td>
+                            <td class="p-2 text-lg">A Narrow Path</td>
+                            <td class="text-gray-400 text-xs p-2">Least Carpet</td>
+                            <td class="pl-6 pr-4">3:36</td>
+                            <td id="mobile" class="sm:hidden block">5</td>
+                        </tr>
+                        <tr onclick="addVote(this)" class="border-b border-white">
+                            <td class="px-4">3.</td>
+                            <td><img class="w-12 pb-4" src="/assets/img/Lundstroem.jpeg" alt=""></td>
+                            <td class="p-2 text-lg">Hey Ricky</td>
+                            <td class="text-gray-400 text-xs p-2">Lundstroem</td>
+                            <td class="pl-6 pr-4">3:36</td>
+                            <td id="mobile" class="sm:hidden block">5</td>
+                        </tr>
+                        <tr onclick="addVote(this)" class="border-b border-white">
+                            <td class="px-4">4.</td>
+                            <td><img class="w-12 pb-4" src="/assets/img/Makaih Beats.jpeg" alt=""></td>
+                            <td class="p-2 text-lg">Highs</td>
+                            <td class="text-gray-400 text-xs p-2">Makaih Beats</td>
+                            <td class="pl-6 pr-4">3:36</td>
+                            <td id="mobile" class="sm:hidden block">5</td>
+                        </tr>
+                        <tr onclick="addVote(this)" class="border-b border-white">
+                            <td class="px-4">5.</td>
+                            <td><img class="w-12 pb-4" src="/assets/img/Scott Holmes.jpeg" alt=""></td>
+                            <td class="p-2 text-lg">Joyfull spring</td>
+                            <td class="text-gray-400 text-xs p-2">Scot Holmes</td>
+                            <td class="pl-6 pr-4">3:36</td>
+                            <td id="mobile" class="sm:hidden block">5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="top" class="m-4 text-white w-1/4">
+            <div class="bg-dark-cyan">
+                <h2 class="p-2">top 3 liedjes</h1>
+                <table id="topTable" class="text-white border-spacing-1 border-separate">
+                    <tr>
+                        <td>1.</td>
+                        <td id="firstTitle">titel</td>
+                        <td id="firstTimesPlayed">keren gespeeld</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td id="secondTitle">titel</td>
+                        <td>keren gespeeld</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td id="thirdTitle">titel</td>
+                        <td>keren gespeeld</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/dist/functions.js"></script>
+
+</html>
